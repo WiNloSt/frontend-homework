@@ -1,0 +1,113 @@
+html {
+  color: #666;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 3rem;
+}
+
+$content-height: 250px;
+$main-height: $content-height * 2;
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 1rem;
+  position: relative;
+}
+
+.title {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 9.375em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em auto;
+}
+
+.nav__item {
+  text-decoration: none;
+  color: #666;
+}
+
+.nav__item:hover {
+  color: #444;
+}
+
+.grid {
+  padding: 0 1rem;
+
+  & .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  & [class*=col-] {
+    vertical-align: top;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+}
+
+// prevent children margin from going beyond their parents'
+// [class*=col-] > *:before {
+//   content: '';
+//   display: block;
+//   width: auto;
+//   height: 1px;
+// }
+
+.ads, .rotator {
+  font-size: 3rem;
+  height: $content-height;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: percentage($i/12);
+    // margin-right: -0.25rem; //disable this after making .row a flex container
+  }
+}
+
+.debug {
+  border: 1px solid red;
+  background: #eee;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-border {
+  border: 1px solid #eee;
+}
+
+.simple-give-area {
+  font-size: 3rem;
+  min-height: $main-height * 0.8;
+}
+
+.sponsor-link {
+  height: 8rem;
+}
+
+.creative-ways-to-give {
+  height: 8rem;
+  margin: 0;
+}

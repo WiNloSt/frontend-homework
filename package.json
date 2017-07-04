@@ -1,0 +1,19 @@
+{
+  "name": "frontend-homework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:WiNloSt/frontend-homework.git",
+  "author": "Mahatthana Nomsawadi <mahatthana.n@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass-chokidar": "^0.0.3",
+    "npm-run-all": "^4.0.2",
+    "serve": "^6.0.1"
+  },
+  "scripts": {
+    "start": "npm-run-all -p serve watch-css",
+    "serve": "serve",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
+  }
+}
