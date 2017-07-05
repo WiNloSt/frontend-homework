@@ -142,3 +142,24 @@ video {
     width: 100%;
   }
 }
+
+.main__sponsor-link {
+  display: block;
+  height: 3rem;
+  background: #eee;
+  text-decoration: none;
+  color: #666;
+  text-align: center;
+  margin: 1rem 0;
+
+  &:hover {
+    color: #444;
+  }
+
+  &:before {
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
