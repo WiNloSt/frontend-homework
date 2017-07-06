@@ -58,6 +58,17 @@ $main-height: $content-height * 2;
   background: #eee;
 }
 
+.inline-center {
+  text-align: center;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
 .container {
   width: 960px;
   margin: 0 auto;
