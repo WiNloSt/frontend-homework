@@ -132,8 +132,6 @@ $main-height: $content-height * 2;
   height: $content-height;
 }
 
-}
-
 .section-border {
   border: 1px solid #eee;
 }
@@ -194,4 +192,9 @@ $main-height: $content-height * 2;
     display: inline-block;
     vertical-align: middle;
   }
+}
+
+.video {
+  float: left;
+  margin-right: 1em;
 }
