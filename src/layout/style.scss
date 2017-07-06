@@ -32,21 +32,19 @@ video {
   position: absolute;
   right: 0;
   top: 0;
-  width: 9.375em;
-  height: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  box-sizing: border-box;
+  min-width: 9.375em;
+  padding: 0.4em 1.2em;
+  text-align: center;
   background: #eee;
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
   margin: 1em auto;
 }
 
 .nav__item {
+  margin: 0 2.2em;
   text-decoration: none;
   color: #666;
 
