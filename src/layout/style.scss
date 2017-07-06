@@ -163,7 +163,12 @@ $main-height: $content-height * 2;
 }
 
 .bio {
-  flex: 1;
+  vertical-align: top;
+  width: 11.575rem;
+  box-sizing: border-box;
+  padding: 0.75em 0.3em;
+  display: inline-block;
+  margin: 0;
 
   img {
     width: 100%;
