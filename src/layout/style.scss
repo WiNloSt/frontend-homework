@@ -8,15 +8,54 @@ body {
   margin: 0 3rem;
 }
 
-$content-height: 250px;
-$main-height: $content-height * 2;
-
 section {
   margin-top: 1rem;
 }
 
 video {
   margin-top: 1rem;
+}
+
+$content-height: 250px;
+$main-height: $content-height * 2;
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: percentage($i/12);
+    // margin-right: -0.25rem; //disable this after making .row a flex container
+  }
+}
+
+// prevent children margin from going beyond their parents'
+// [class*=col-] > *:before {
+//   content: '';
+//   display: block;
+//   width: auto;
+//   height: 1px;
+// }
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+// Utilitiy classes
+.debug {
+  border: 1px solid red;
+  background: #eee;
 }
 
 .container {
@@ -75,35 +114,11 @@ video {
   }
 }
 
-// prevent children margin from going beyond their parents'
-// [class*=col-] > *:before {
-//   content: '';
-//   display: block;
-//   width: auto;
-//   height: 1px;
-// }
-
 .ads, .rotator {
   font-size: 3rem;
   height: $content-height;
 }
 
-@for $i from 1 through 12 {
-  .col-#{$i} {
-    width: percentage($i/12);
-    // margin-right: -0.25rem; //disable this after making .row a flex container
-  }
-}
-
-.debug {
-  border: 1px solid red;
-  background: #eee;
-}
-
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .section-border {
