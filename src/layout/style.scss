@@ -175,7 +175,7 @@ $main-height: $content-height * 2;
 
 .main__sponsor-link {
   display: block;
-  height: 3rem;
+  padding: 1em 0;
   background: #eee;
   text-decoration: none;
   color: #666;
@@ -184,13 +184,6 @@ $main-height: $content-height * 2;
 
   &:hover {
     color: #444;
-  }
-
-  &:before {
-    content: '';
-    height: 100%;
-    display: inline-block;
-    vertical-align: middle;
   }
 }
 
