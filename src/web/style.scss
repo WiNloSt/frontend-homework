@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400);
+
+a > img {
+  vertical-align: bottom; //prevent bottom space causing by descenders
+}
+
+html {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.header {
+  position: relative;
+  background: url('images/header-background.jpg') no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding-top: 37px;
+  height: 45em;
+}
+
+.container {
+  width: 1230px;
+  margin: 0 auto;
+}
+
+.header-slogan {
+  position: absolute;
+  top: 21rem;
+  margin: 0;
+  font-size: 2.375rem;
+  font-weight: lighter;
+  letter-spacing: 0.21em;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.nav {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2.25em;
+
+  a {
+    margin: 0 1.5625em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+
+    &.active {
+      position: relative;
+      font-weight: bold;
+
+      &:after {
+        content: '';
+        position: absolute;
+        height: 0.1875em;
+        left: -0.375em;
+        right: -0.375em;
+        bottom: -0.25em;
+        background: #1bf1ad;
+      }
+    }
+  }
+}
