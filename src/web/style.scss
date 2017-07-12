@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:300,400);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,600,700);
 
 a > img {
   vertical-align: bottom; //prevent bottom space causing by descenders
@@ -6,6 +6,37 @@ a > img {
 
 html {
   font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  letter-spacing: 0.25rem;
+  font-size: 1.125rem;
+  color: #303030;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.75rem;
+  font-weight: lighter;
+  color: #666;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
 
 .header {
@@ -63,5 +94,62 @@ html {
         background: #1bf1ad;
       }
     }
+  }
+}
+
+.digital-creative {
+  margin-top: 7rem;
+  text-align: center;
+
+  p {
+    width: 40.25rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    line-height: 1.571;
+    letter-spacing: 0.0625rem;
+  }
+}
+
+.our-ideology {
+  float: right;
+  margin-top: 15.375rem;
+  margin-right: 6rem;
+
+  h2 {
+    margin: 0;
+  }
+
+  p {
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+    text-transform:  uppercase;
+    font-size: 5.375rem;
+    font-weight: bolder;
+    color:  #303030;
+    line-height: 1.047;
+    text-align: left;
+  }
+}
+
+.cool-quote {
+
+  .container {
+    position: relative;
+  }
+
+  img {
+    position: absolute;
+    z-index: -1;
+    bottom: -1.5em;
+    left: -24em;
+  }
+
+  p {
+    margin: 0;
+    width: 26rem;
+    font-weight: 600;
+    color:  #303030;
+    font-size: 3.625rem;
+    line-height: 1.206896552;
   }
 }
