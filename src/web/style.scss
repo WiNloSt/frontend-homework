@@ -39,6 +39,14 @@ p {
     *zoom: 1;
 }
 
+.big-black-p {
+  font-size: 5.375rem;
+  font-weight: bolder;
+  color:  #303030;
+  line-height: 1.047;
+  text-transform:  uppercase;
+}
+
 .header {
   position: relative;
   background: url('images/header-background.jpg') no-repeat;
@@ -146,11 +154,6 @@ p {
   p {
     margin-top: 2.5rem;
     margin-bottom: 0;
-    text-transform:  uppercase;
-    font-size: 5.375rem;
-    font-weight: bolder;
-    color:  #303030;
-    line-height: 1.047;
     text-align: left;
   }
 }
@@ -175,5 +178,15 @@ p {
     color:  #303030;
     font-size: 3.625rem;
     line-height: 1.206896552;
+  }
+}
+
+.meet-the-team {
+  position: relative;
+  left: calc(50% - 40rem);
+  margin-top: 13rem;
+
+  p {
+    margin-top: 1.625rem;
   }
 }
