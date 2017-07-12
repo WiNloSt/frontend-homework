@@ -4,3 +4,23 @@
     margin-right: -0.25rem; //disable this after making .row a flex container
   }
 }
+
+.grid {
+  padding: 0 1rem;
+
+  .row {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  .row:nth-child(n+2) {
+    margin-top: 1rem;
+  }
+
+  [class*=col-] {
+    vertical-align: top;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+}

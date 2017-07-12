@@ -48,6 +48,10 @@ p {
   text-transform:  uppercase;
 }
 
+.debug {
+  border: 1px solid red;
+}
+
 .header {
   position: relative;
   background: url('images/header-background.jpg') no-repeat;
@@ -183,11 +187,29 @@ p {
 }
 
 .meet-the-team {
-  position: relative;
-  left: calc(50% - 40rem);
   margin-top: 13rem;
+
+  .section-header {
+    display: inline-block;
+    position: relative;
+    left: calc(50% - 40rem);
+  }
+
+  .container {
+    margin-top: 4.5rem;
+  }
+
+  .people-card {
+    padding-top: 1.2em;
+    font-size: 1.25rem;
+
+    img {
+      float: left;
+    }
+  }
 
   p {
     margin-top: 1.625rem;
+    margin-bottom: 0;
   }
 }

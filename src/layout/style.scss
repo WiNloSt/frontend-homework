@@ -102,26 +102,6 @@ $main-height: $content-height * 2;
   }
 }
 
-.grid {
-  padding: 0 1rem;
-
-  .row {
-    margin-left: -1rem;
-    margin-right: -1rem;
-  }
-
-  .row:nth-child(n+2) {
-    margin-top: 1rem;
-  }
-
-  [class*=col-] {
-    vertical-align: top;
-    padding: 0 1rem;
-    box-sizing: border-box;
-    display: inline-block;
-  }
-}
-
 .ads, .rotator {
   font-size: 3rem;
   height: $content-height;
