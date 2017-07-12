@@ -1,0 +1,6 @@
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: percentage($i/12);
+    margin-right: -0.25rem; //disable this after making .row a flex container
+  }
+}

@@ -1,3 +1,5 @@
+@import '../grid';
+
 html {
   color: #666;
   font-size: 16px;
@@ -18,13 +20,6 @@ video {
 
 $content-height: 250px;
 $main-height: $content-height * 2;
-
-@for $i from 1 through 12 {
-  .col-#{$i} {
-    width: percentage($i/12);
-    margin-right: -0.25rem; //disable this after making .row a flex container
-  }
-}
 
 // prevent children margin from going beyond their parents'
 // [class*=col-] > *:before {
