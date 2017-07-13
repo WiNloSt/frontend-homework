@@ -33,31 +33,29 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+
+  deploy:
+    docker:
+      - image: circleci/node:8.1.2
+
+    working_directory: ~/frontend-homework
+
+    steps:
+      - add_ssh_keys
+      - attach_workspace:
+          at: .
+      # deploy to gh-pages
       - run: yarn deploy
 
-      # - persist_to_workspace:
-      #     root: .
-      #     paths:
-      #       - .
-
-#   deploy:
-#     machine:
-#       image: circleci/node:8.1.2
-
-#     working_directory: ~/frontend-homework
-
-#     steps:
-#       - add_ssh_keys
-#       - attach_workspace:
-#           at: .
-#       # deploy to gh-pages
-#       - run: yarn deploy
-
-# workflows:
-#   version: 2
-#   build_test_and_deploy:
-#     jobs:
-#       - build
-#       - deploy:
-#           requires:
-#             - build
+workflows:
+  version: 2
+  build_test_and_deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
