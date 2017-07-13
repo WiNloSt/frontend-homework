@@ -48,8 +48,15 @@ jobs:
       - add_ssh_keys
       - attach_workspace:
           at: .
-      # deploy to gh-pages
-      - run: yarn deploy
+
+      - run:
+          name: configure git detail
+          command: |
+            git config --global user.email "me@codekelvin.com"
+            git config --global user.name "Mahatthana Nomsawadi via CircleCI"
+      - run:
+          name: deploy to gh-pages
+          command: yarn deploy
 
 workflows:
   version: 2
