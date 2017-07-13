@@ -138,10 +138,10 @@ p {
     text-transform: uppercase;
     text-decoration: none;
     color: white; }
-    .nav a.active {
+    .nav a.active, .nav a:active, .nav a:hover, .nav a:focus {
       position: relative;
-      font-weight: bold; }
-      .nav a.active:after {
+      text-shadow: 0 0 1px white; }
+      .nav a.active:after, .nav a:active:after, .nav a:hover:after, .nav a:focus:after {
         content: '';
         position: absolute;
         height: 0.1875em;
