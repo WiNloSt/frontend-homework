@@ -151,8 +151,10 @@ p {
         background: #1bf1ad; }
 
 .digital-creative {
-  margin-top: 7rem;
+  padding-top: 7rem;
   text-align: center; }
+  .digital-creative h2 {
+    margin: 0; }
   .digital-creative p {
     width: 40.25rem;
     margin: 0 auto;
@@ -163,8 +165,8 @@ p {
 .our-ideology {
   position: relative;
   float: right;
-  margin-top: 15.375rem;
-  margin-right: 6rem; }
+  padding-top: 15.375rem;
+  padding-right: 6rem; }
   .our-ideology:after {
     content: '+++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++';
     font-size: 1.5rem;
@@ -200,11 +202,13 @@ p {
   line-height: 1.206896552; }
 
 .meet-the-team {
-  margin-top: 13rem; }
+  padding-top: 13rem; }
   .meet-the-team .section-header {
     display: inline-block;
     position: relative;
     left: calc(50% - 40rem); }
+    .meet-the-team .section-header h2 {
+      margin: 0; }
     .meet-the-team .section-header p {
       margin-top: 1.625rem;
       margin-bottom: 0; }
