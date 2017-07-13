@@ -21,6 +21,5 @@ else
 fi
 
 #deploy to gh-pages
-mkdir -p ~/.ssh
 ssh-keyscan -H github.com >> ~/.ssh/known_hosts
 yarn gh-pages -- -d build
