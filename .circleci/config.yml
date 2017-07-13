@@ -40,7 +40,6 @@ jobs:
 
   deploy:
     machine:
-      enable: true
       image: circleci/node:8.1.2
 
     working_directory: ~/frontend-homework
