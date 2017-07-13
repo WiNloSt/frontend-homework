@@ -39,8 +39,7 @@ jobs:
             - .
 
   deploy:
-    docker:
-      - image: circleci/node:8.1.2
+    machine: true
 
     working_directory: ~/frontend-homework
 
