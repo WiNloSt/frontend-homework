@@ -38,18 +38,6 @@ jobs:
           paths:
             - .
 
-  test:
-    docker:
-      - image: circleci/node:8.1.2
-
-    working_directory: ~/frontend-homework
-
-    steps:
-      - attach_workspace:
-          at: .
-      # run tests!
-      - run: yarn test
-
   deploy:
     docker:
       - image: circleci/node:8.1.2
@@ -67,9 +55,6 @@ workflows:
   build_test_and_deploy:
     jobs:
       - build
-      - test:
-          requires:
-            - build
       - deploy:
           requires:
             - test
