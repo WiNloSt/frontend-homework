@@ -6,12 +6,14 @@
   "author": "Mahatthana Nomsawadi <mahatthana.n@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.0.2",
     "serve": "^6.0.1"
   },
   "scripts": {
     "start": "npm-run-all -p serve watch-css",
+    "deploy": "bash config/deploy.bash",
     "serve": "serve",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
