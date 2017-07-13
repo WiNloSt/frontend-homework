@@ -13,12 +13,12 @@ cp -r src/web/* build
 #remove scss file
 find build -name "*.scss" -delete
 
-pwd
-ls -la
-ls -la build
-
 #remove livejs script
-sed -i '' '/live/d' build/index.html
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  sed -i '' '/live/d' build/index.html
+else
+  sed -i '/live/d' build/index.html
+fi
 
 #deploy to gh-pages
 ssh-keyscan -H github.com >> ~/.ssh/known_hosts
