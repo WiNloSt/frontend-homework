@@ -1,0 +1,217 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,600,700);
+.col-1 {
+  width: 8.33333%;
+  margin-right: -0.25rem; }
+
+.col-2 {
+  width: 16.66667%;
+  margin-right: -0.25rem; }
+
+.col-3 {
+  width: 25%;
+  margin-right: -0.25rem; }
+
+.col-4 {
+  width: 33.33333%;
+  margin-right: -0.25rem; }
+
+.col-5 {
+  width: 41.66667%;
+  margin-right: -0.25rem; }
+
+.col-6 {
+  width: 50%;
+  margin-right: -0.25rem; }
+
+.col-7 {
+  width: 58.33333%;
+  margin-right: -0.25rem; }
+
+.col-8 {
+  width: 66.66667%;
+  margin-right: -0.25rem; }
+
+.col-9 {
+  width: 75%;
+  margin-right: -0.25rem; }
+
+.col-10 {
+  width: 83.33333%;
+  margin-right: -0.25rem; }
+
+.col-11 {
+  width: 91.66667%;
+  margin-right: -0.25rem; }
+
+.col-12 {
+  width: 100%;
+  margin-right: -0.25rem; }
+
+.grid {
+  padding: 0 1rem; }
+  .grid .row {
+    margin-left: -1rem;
+    margin-right: -1rem; }
+  .grid .row:nth-child(n+2) {
+    margin-top: 1rem; }
+  .grid [class*=col-] {
+    vertical-align: top;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    display: inline-block; }
+
+a > img {
+  vertical-align: bottom; }
+
+html {
+  font-family: Poppins, Arial, Helvetica, sans-serif; }
+
+h2 {
+  letter-spacing: 0.25rem;
+  font-size: 1.125rem;
+  color: #303030;
+  text-transform: uppercase; }
+
+p {
+  font-size: 1.75rem;
+  font-weight: lighter;
+  color: #666; }
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }
+
+.big-black-p {
+  font-size: 5.375rem;
+  font-weight: bolder;
+  color: #303030;
+  line-height: 1.047;
+  text-transform: uppercase; }
+
+.debug {
+  border: 1px solid red; }
+
+.header {
+  position: relative;
+  background: url("images/header-background.jpg") no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding-top: 37px;
+  height: 45em; }
+
+.container {
+  width: 1230px;
+  margin: 0 auto; }
+
+.header-slogan {
+  position: absolute;
+  width: 100%;
+  top: 21rem;
+  margin: 0;
+  font-size: 2.375rem;
+  font-weight: lighter;
+  letter-spacing: 0.21em;
+  text-align: center;
+  text-transform: uppercase;
+  color: white; }
+
+.nav {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2.25em; }
+  .nav a {
+    margin: 0 1.5625em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white; }
+    .nav a.active {
+      position: relative;
+      font-weight: bold; }
+      .nav a.active:after {
+        content: '';
+        position: absolute;
+        height: 0.1875em;
+        left: -0.375em;
+        right: -0.375em;
+        bottom: -0.25em;
+        background: #1bf1ad; }
+
+.digital-creative {
+  margin-top: 7rem;
+  text-align: center; }
+  .digital-creative p {
+    width: 40.25rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    line-height: 1.571;
+    letter-spacing: 0.0625rem; }
+
+.our-ideology {
+  position: relative;
+  float: right;
+  margin-top: 15.375rem;
+  margin-right: 6rem; }
+  .our-ideology:after {
+    content: '+++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++++++++++++++++++';
+    font-size: 1.5rem;
+    position: absolute;
+    width: 54.4375rem;
+    color: #e0e0e0;
+    left: 2.75rem;
+    top: 10rem;
+    z-index: -1;
+    letter-spacing: 0.3125rem; }
+  .our-ideology h2 {
+    margin: 0; }
+  .our-ideology p {
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+    text-align: left; }
+
+.cool-quote .container {
+  position: relative; }
+
+.cool-quote img {
+  position: absolute;
+  z-index: -1;
+  bottom: -1.5em;
+  left: -24em; }
+
+.cool-quote p {
+  margin: 0;
+  width: 26rem;
+  font-weight: 600;
+  color: #303030;
+  font-size: 3.625rem;
+  line-height: 1.206896552; }
+
+.meet-the-team {
+  margin-top: 13rem; }
+  .meet-the-team .section-header {
+    display: inline-block;
+    position: relative;
+    left: calc(50% - 40rem); }
+  .meet-the-team .container {
+    margin-top: 4.5rem; }
+  .meet-the-team .people-card {
+    padding-top: 1.2em;
+    font-size: 1.25rem; }
+    .meet-the-team .people-card img {
+      float: left; }
+  .meet-the-team p {
+    margin-top: 1.625rem;
+    margin-bottom: 0; }
