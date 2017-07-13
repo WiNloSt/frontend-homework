@@ -93,9 +93,9 @@ p {
     text-decoration: none;
     color: white;
 
-    &.active {
+    &.active, &:active, &:hover, &:focus {
       position: relative;
-      font-weight: bold;
+      text-shadow: 0 0 1px white;
 
       &:after {
         content: '';
