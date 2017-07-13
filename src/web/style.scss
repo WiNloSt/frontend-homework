@@ -193,6 +193,11 @@ p {
     display: inline-block;
     position: relative;
     left: calc(50% - 40rem);
+
+    p {
+      margin-top: 1.625rem;
+      margin-bottom: 0;
+    }
   }
 
   .container {
@@ -205,11 +210,28 @@ p {
 
     img {
       float: left;
+      margin-right: 1.5rem;
     }
-  }
 
-  p {
-    margin-top: 1.625rem;
-    margin-bottom: 0;
+    i {
+      font-size: 0.75rem;
+
+      &:not(:last-child) {
+        margin-right: 1.25rem;
+      }
+    }
+
+    .name {
+      color:  #303030;
+      font-size: 1.25rem;
+      font-weight: normal;
+      margin: .75rem 0;
+    }
+
+    .position {
+      color:  #666666;
+      font-size: 1rem;/* Approximation due to font substitution */
+      margin-bottom: .875rem;
+    }
   }
 }
