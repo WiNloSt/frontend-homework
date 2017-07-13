@@ -16,4 +16,5 @@ find build -name "*.scss" -delete
 sed -i '' '/live/d' build/index.html
 
 #deploy to gh-pages
+ssh-keyscan -H github.com >> ~/.ssh/known_hosts
 yarn gh-pages -- -d build
