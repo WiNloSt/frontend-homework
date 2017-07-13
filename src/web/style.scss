@@ -111,8 +111,12 @@ p {
 }
 
 .digital-creative {
-  margin-top: 7rem;
+  padding-top: 7rem;
   text-align: center;
+
+  h2 {
+    margin: 0;
+  }
 
   p {
     width: 40.25rem;
@@ -126,8 +130,8 @@ p {
 .our-ideology {
   position: relative;
   float: right;
-  margin-top: 15.375rem;
-  margin-right: 6rem;
+  padding-top: 15.375rem;
+  padding-right: 6rem;
 
   &:after {
     content: '+++++++++++++++++++++++++++++++++++++++
@@ -187,12 +191,16 @@ p {
 }
 
 .meet-the-team {
-  margin-top: 13rem;
+  padding-top: 13rem;
 
   .section-header {
     display: inline-block;
     position: relative;
     left: calc(50% - 40rem);
+
+    h2 {
+      margin: 0;
+    }
 
     p {
       margin-top: 1.625rem;
