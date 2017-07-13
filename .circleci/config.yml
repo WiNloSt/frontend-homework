@@ -45,6 +45,7 @@ jobs:
     working_directory: ~/frontend-homework
 
     steps:
+      - add_ssh_keys
       - attach_workspace:
           at: .
       # deploy to gh-pages
