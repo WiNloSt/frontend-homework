@@ -224,9 +224,9 @@ p {
       color: #303030;
       font-size: 1.25rem;
       font-weight: normal;
-      margin: .75rem 0; }
+      margin: 0.75rem 0; }
     .meet-the-team .people-card .position {
       color: #666666;
       font-size: 1rem;
-      /* Approximation due to font substitution */
-      margin-bottom: .875rem; }
+      margin: 0;
+      margin-bottom: 0.875rem; }
