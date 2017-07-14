@@ -114,7 +114,7 @@ p {
   max-height: 720px; }
 
 .container {
-  width: 1230px;
+  max-width: 1230px;
   margin: 0 auto; }
 
 .header-slogan {
@@ -215,8 +215,7 @@ p {
   padding-top: 13rem; }
   .meet-the-team .section-header {
     display: inline-block;
-    position: relative;
-    left: calc(50% - 40rem); }
+    padding-left: calc(((100% - 1230px)/2) - 60px); }
     .meet-the-team .section-header h2 {
       margin: 0; }
     .meet-the-team .section-header p {
