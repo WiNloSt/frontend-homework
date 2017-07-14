@@ -227,7 +227,7 @@ $max-header-height: 720px;
   }
 
   .people-card {
-    padding-top: 1.2em;
+    padding: 1.2em 2.4em;
     font-size: 1.25rem;
 
     img {
@@ -255,6 +255,16 @@ $max-header-height: 720px;
       font-size: 1rem;
       margin: 0;
       margin-bottom: 0.875rem;
+      white-space: nowrap;
+    }
+
+    &.inverted {
+      color: white;
+      background: #1bf1ad;;
+
+      .name, .position {
+        color: white;
+      }
     }
   }
 }
