@@ -224,7 +224,7 @@ p {
   .meet-the-team .container {
     margin-top: 4.5rem; }
   .meet-the-team .people-card {
-    padding-top: 1.2em;
+    padding: 1.2em 2.4em;
     font-size: 1.25rem; }
     .meet-the-team .people-card img {
       float: left;
@@ -242,4 +242,10 @@ p {
       color: #666666;
       font-size: 1rem;
       margin: 0;
-      margin-bottom: 0.875rem; }
+      margin-bottom: 0.875rem;
+      white-space: nowrap; }
+    .meet-the-team .people-card.inverted {
+      color: white;
+      background: #1bf1ad; }
+      .meet-the-team .people-card.inverted .name, .meet-the-team .people-card.inverted .position {
+        color: white; }
